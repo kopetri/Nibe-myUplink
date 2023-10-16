@@ -50,7 +50,7 @@ echo "<INFO> installing dependencies"
 npm --prefix $PHTMLAUTH ci --only=production
 
 echo "<INFO> Register Plugin at Express Server"
-curl -X POST http://localhost:3300/system/express/plugin/loxberrymynibe
+curl -X POST http://localhost:3300/system/express/plugin/myuplinkplugin
 
 # your code goes here
 
