@@ -1,0 +1,24 @@
+{
+  "name": "loxberry-loxberrymynibe",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "dev": "nodemon --watch webfrontend/htmlauth --watch templates --exec node_modules/.bin/loxberryExpressDevServer -- ./",
+    "release:major": "node .github/release.js major false",
+    "release:minor": "node .github/release.js minor false",
+    "release:patch": "node .github/release.js patch false",
+    "pre:major": "node .github/release.js major true",
+    "pre:minor": "node .github/release.js minor true",
+    "pre:patch": "node .github/release.js patch true"
+  },
+  "author": "Sebastian Hartwig",
+  "license": "APACHE 2.0",
+  "devDependencies": {
+    "generate-changelog": "1.8.0",
+    "loxberry-express-dev-server": "2.0.2",
+    "nodemon": "2.0.15",
+    "prompts": "2.4.2",
+    "read-ini-file": "3.0.1",
+    "write-ini-file": "3.0.2"
+  }
+}

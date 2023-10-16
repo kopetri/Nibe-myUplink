@@ -1,0 +1,35 @@
+{
+  "plugins": {
+    "0f36144b3b61c7a03b436884fc8d9430": {
+      "author_email": "sebastian@hartwig-bw.de",
+      "author_name": "Sebastian Hartwig",
+      "autoupdate": true,
+      "directories": {
+        "installfiles": "D:\\LoxBerryMyNibe\\data\\system\\install\\loxberrymynibe",
+        "lbpbindir": "D:\\LoxBerryMyNibe\\bin",
+        "lbpconfigdir": "D:\\LoxBerryMyNibe\\config",
+        "lbpdatadir": "D:\\LoxBerryMyNibe\\data",
+        "lbphtmlauthdir": "D:\\LoxBerryMyNibe\\webfrontend\\htmlauth",
+        "lbphtmldir": "D:\\LoxBerryMyNibe\\webfrontend\\html",
+        "lbplogdir": "D:\\LoxBerryMyNibe\\log",
+        "lbptemplatedir": "D:\\LoxBerryMyNibe\\templates"
+      },
+      "epoch_firstinstalled": 1628693690,
+      "files": {
+        "daemon": "D:\\LoxBerryMyNibe\\daemon\\daemon",
+        "sudoers": "D:\\LoxBerryMyNibe\\sudoers\\sudoers",
+        "uninstall": "D:\\LoxBerryMyNibe\\uninstall\\uninstall"
+      },
+      "folder": "loxberrymynibe",
+      "interface": "2.0",
+      "loglevel": "-1",
+      "loglevels_enabled": 0,
+      "md5": "0f36144b3b61c7a03b436884fc8d9430",
+      "name": "loxberrymynibe",
+      "prereleasecfg": "https://raw.githubusercontent.com/kopetri/loxberrymynibe/master/prerelease.cfg",
+      "releasecfg": "https://raw.githubusercontent.com/kopetri/loxberrymynibe/master/release.cfg",
+      "title": "LoxBerryMyNibe",
+      "version": "0.0.1"
+    }
+  }
+}

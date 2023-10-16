@@ -1,0 +1,51 @@
+<style>
+  .hello {
+    display: flex;
+    column-gap: 2rem;
+	  align-items: stretch;
+  }
+  .hello > * {
+    flex-direction: row;
+    margin: 0;
+  }
+  h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+  }
+</style>
+<script>
+  const clientId = '760f402b-36ea-475a-9016-12fb0074dd98';
+  const clientSecret = '0A59E8C121C8E85F96262648FF64C67D';
+  const authorizationUrl = 'https://api.myuplink.com/oauth/authorize';
+  const tokenUrl = 'https://api.myuplink.com/oauth/token';
+  const redirectUri = 'http://localhost:3303/admin/express/plugins/loxberrymynibe';
+  const scope = 'READSYSTEM'; // Adjust as needed
+  const State = "x"
+  const authorizeUrl = `${authorizationUrl}?client_id=${clientId}&scope=${scope}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=code`;
+
+  fetch(authorizeUrl).then(response=>response.json()).then(response => {
+    console.log(response)
+  })
+
+  function getToken(tokenURL, data) {
+    fetch(tokenURL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body: URLSearchParams(data),
+    }).then(response=>response.json()).then(tokenData=> {
+      const accessToken = tokenData.access_token;
+      console.log("Access Token: ", accessToken);
+    })
+  }
+
+  
+
+ 
+</script>
+<div class="hello">
+  <img src='{{path}}/assets/icon_64.png' />
+  <h1>{{t 'welcome' name=title}}</h1>
+</div>
+<p>{{t 'example'}}</p>
