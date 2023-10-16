@@ -5,30 +5,30 @@
       "author_name": "Sebastian Hartwig",
       "autoupdate": true,
       "directories": {
-        "installfiles": "D:\\myUplinkPlugin\\data\\system\\install\\myuplinkplugin",
-        "lbpbindir": "D:\\myUplinkPlugin\\bin",
-        "lbpconfigdir": "D:\\myUplinkPlugin\\config",
-        "lbpdatadir": "D:\\myUplinkPlugin\\data",
-        "lbphtmlauthdir": "D:\\myUplinkPlugin\\webfrontend\\htmlauth",
-        "lbphtmldir": "D:\\myUplinkPlugin\\webfrontend\\html",
-        "lbplogdir": "D:\\myUplinkPlugin\\log",
-        "lbptemplatedir": "D:\\myUplinkPlugin\\templates"
+        "installfiles": "D:\\Nibe-myUplink\\data\\system\\install\\nibe-myuplink",
+        "lbpbindir": "D:\\Nibe-myUplink\\bin",
+        "lbpconfigdir": "D:\\Nibe-myUplink\\config",
+        "lbpdatadir": "D:\\Nibe-myUplink\\data",
+        "lbphtmlauthdir": "D:\\Nibe-myUplink\\webfrontend\\htmlauth",
+        "lbphtmldir": "D:\\Nibe-myUplink\\webfrontend\\html",
+        "lbplogdir": "D:\\Nibe-myUplink\\log",
+        "lbptemplatedir": "D:\\Nibe-myUplink\\templates"
       },
       "epoch_firstinstalled": 1628693690,
       "files": {
-        "daemon": "D:\\myUplinkPlugin\\daemon\\daemon",
-        "sudoers": "D:\\myUplinkPlugin\\sudoers\\sudoers",
-        "uninstall": "D:\\myUplinkPlugin\\uninstall\\uninstall"
+        "daemon": "D:\\Nibe-myUplink\\daemon\\daemon",
+        "sudoers": "D:\\Nibe-myUplink\\sudoers\\sudoers",
+        "uninstall": "D:\\Nibe-myUplink\\uninstall\\uninstall"
       },
-      "folder": "myuplinkplugin",
+      "folder": "nibe-myuplink",
       "interface": "2.0",
       "loglevel": "-1",
       "loglevels_enabled": 0,
       "md5": "0f36144b3b61c7a03b436884fc8d9430",
-      "name": "myuplinkplugin",
-      "prereleasecfg": "https://raw.githubusercontent.com/kopetri/myuplinkplugin/master/prerelease.cfg",
-      "releasecfg": "https://raw.githubusercontent.com/kopetri/myuplinkplugin/master/release.cfg",
-      "title": "myUplinkPlugin",
+      "name": "nibe-myuplink",
+      "prereleasecfg": "https://raw.githubusercontent.com/kopetri/nibe-myuplink/master/prerelease.cfg",
+      "releasecfg": "https://raw.githubusercontent.com/kopetri/nibe-myuplink/master/release.cfg",
+      "title": "Nibe-myUplink",
       "version": "0.0.1"
     }
   }
