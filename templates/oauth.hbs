@@ -1,0 +1,48 @@
+<style>
+  .hello {
+    display: flex;
+    column-gap: 2rem;
+	  align-items: stretch;
+  }
+  .hello > * {
+    flex-direction: row;
+    margin: 0;
+  }
+  h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+  }
+</style>
+<script>
+  const clientId = '760f402b-36ea-475a-9016-12fb0074dd98';
+  const clientSecret = '0A59E8C121C8E85F96262648FF64C67D';
+  const tokenUrl = 'https://api.myuplink.com/oauth/token';
+  const redirectUri = 'http://localhost:3300/admin/express/plugins/nibe-myuplink/auth';
+  const scope = 'READSYSTEM WRITESYSTEM offline_access'; // Adjust as needed
+  const State = "x"
+
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const code = urlParams.get('code')
+
+  data = {
+    grant_type: "authorization_code",
+    client_id: clientId,
+    client_secret: clientSecret,
+    code: code,
+    redirect_uri: redirectUri
+  }
+  fetch(tokenUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body: new URLSearchParams(data)
+  }).then(response=>response.json()).then(response=>{
+    const admin_url = `http://localhost:3300/admin/express/plugins/nibe-myuplink`;
+    for (const [key, value] of Object.entries(response)) {
+      sessionStorage.setItem(key, value);
+    }
+    window.location.replace(admin_url);
+  })
+</script>

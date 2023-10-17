@@ -5,20 +5,20 @@
       "author_name": "Sebastian Hartwig",
       "autoupdate": true,
       "directories": {
-        "installfiles": "D:\\Nibe-myUplink\\data\\system\\install\\nibe-myuplink",
-        "lbpbindir": "D:\\Nibe-myUplink\\bin",
-        "lbpconfigdir": "D:\\Nibe-myUplink\\config",
-        "lbpdatadir": "D:\\Nibe-myUplink\\data",
-        "lbphtmlauthdir": "D:\\Nibe-myUplink\\webfrontend\\htmlauth",
-        "lbphtmldir": "D:\\Nibe-myUplink\\webfrontend\\html",
-        "lbplogdir": "D:\\Nibe-myUplink\\log",
-        "lbptemplatedir": "D:\\Nibe-myUplink\\templates"
+        "installfiles": "F:\\projects\\Nibe-myUplink\\data\\system\\install\\nibe-myuplink",
+        "lbpbindir": "F:\\projects\\Nibe-myUplink\\bin",
+        "lbpconfigdir": "F:\\projects\\Nibe-myUplink\\config",
+        "lbpdatadir": "F:\\projects\\Nibe-myUplink\\data",
+        "lbphtmlauthdir": "F:\\projects\\Nibe-myUplink\\webfrontend\\htmlauth",
+        "lbphtmldir": "F:\\projects\\Nibe-myUplink\\webfrontend\\html",
+        "lbplogdir": "F:\\projects\\Nibe-myUplink\\log",
+        "lbptemplatedir": "F:\\projects\\Nibe-myUplink\\templates"
       },
       "epoch_firstinstalled": 1628693690,
       "files": {
-        "daemon": "D:\\Nibe-myUplink\\daemon\\daemon",
-        "sudoers": "D:\\Nibe-myUplink\\sudoers\\sudoers",
-        "uninstall": "D:\\Nibe-myUplink\\uninstall\\uninstall"
+        "daemon": "F:\\projects\\Nibe-myUplink\\daemon\\daemon",
+        "sudoers": "F:\\projects\\Nibe-myUplink\\sudoers\\sudoers",
+        "uninstall": "F:\\projects\\Nibe-myUplink\\uninstall\\uninstall"
       },
       "folder": "nibe-myuplink",
       "interface": "2.0",

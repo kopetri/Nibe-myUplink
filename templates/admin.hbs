@@ -1,0 +1,39 @@
+<style>
+  .hello {
+    display: flex;
+    column-gap: 2rem;
+	  align-items: stretch;
+  }
+  .hello > * {
+    flex-direction: row;
+    margin: 0;
+  }
+  h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+  }
+</style>
+<script>
+  function doStuff() {
+    fetch("https://api.myuplink.com/v2/systems/me", {
+      method:"GET",
+      headers:{
+        accept: "application/json",
+        Authorization: `Bearer ${sessionStorage.getItem("access_token")}`
+      }
+    }).then(response=>response.json()).then(resp=>console.log(resp));
+  }
+  const access_token = sessionStorage.getItem("access_token");
+  if (access_token) {
+    
+  } else {
+    window.location.replace("http://localhost:3300/express/plugins/nibe-myuplink");
+  }
+  
+</script>
+<div class="hello">
+  <img src='{{path}}/assets/icon_64.png' />
+  <h1>Admin Area</h1>
+</div>
+<p id="result">Hello, you are logged in.</p>
+<button onclick="doStuff()">Do stuff</button>
